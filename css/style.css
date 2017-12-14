@@ -1,0 +1,490 @@
+/* Page Style */
+body{
+    font: normal 1.1em/1.5 lato;
+    color: #222;
+    background-color: #fff;
+/*	width:90%;
+	margin:auto;*/
+}
+
+
+
+
+/* Layout Element Colors */
+.main-header{ background-color: #199648; }
+.main-logo{ background-color: #5fcf80; }
+.main-nav li{ background-color: #68dd94; }
+.primary-content{ background-color: #abfbc9; }
+.secondary-content{ background-color: #bbeccd; }
+.main-footer{ background-color: #ceead8; }
+
+/* Header, Banner, and Footer Layout */
+.main-logo a,
+.main-nav a{
+    color: white;
+    text-decoration: none;
+	display:block;
+	text-align:center;
+    padding: 5px 15px;
+	border-radius:5px;
+	position:relative;
+	overflow:hidden;
+}
+
+
+.main-logo,
+.main-nav li {
+    float: left;
+}
+*{
+	box-sizing:border-box;
+}
+
+
+
+.main-header{
+    padding: 15px;
+	min-height:150px;
+	/*overflow:hidden;*/
+}
+/*
+//Clearfix //
+.group::after{
+    content: " ";
+    display: table;
+    clear: both;
+}
+*/
+.feat-img{
+    width: 100%;
+    float: left;
+	margin-top: 10px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	border: solid 1px;
+    padding: 5px;
+
+}
+
+
+
+
+.main-logo, 
+.main-nav,
+.main-nav li{
+  display: inline-block;
+}
+
+.main-logo,
+.main-nav li{
+    border-radius: 7px;
+}
+
+.main-logo{
+	top:-5px;
+	left:20px;
+	
+    
+}
+
+.main-nav li {
+    margin-top: 15px;
+	margin-right: 5px;
+	margin-left: 10px;
+
+}
+
+
+.main-logo, 
+.main-nav{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.main-nav{
+    padding-left: 50px;
+	padding-top:50px;
+	padding:5px;
+	float:left;
+}
+
+.main-nav{
+    bottom: 25px;
+    left: 5px;
+}
+
+
+
+/*.main-wrapper{
+    width: 90%;
+    margin: auto;
+}*/
+
+	.feat-img{
+		width:100%;
+	}
+	
+	.main-logo{
+        margin-right: 0;
+}
+
+
+    .main-nav{
+        padding-left: initial;
+		padding-top:initial;
+    }
+    .main-nav li{
+        margin-top: 15px;
+    }
+
+	.main-nav{
+		display:-webkit-flex;
+        display: flex;
+}
+
+
+
+
+.col{
+	padding:20px;
+	float:right;
+	width:100%;
+}
+/*
+
+.main-logo,
+.main-nav{
+    position: absolute;
+}
+ .main-nav li{
+        margin-left: 6px;
+		margin-right:6px;
+		display:inline-block;
+    }
+	   .content-row{
+        position: relative;
+}*/
+
+
+ html,
+body,
+.main-wrapper{
+    height: 100%;
+}
+ 
+.col:last-child{
+	float:right;
+}
+ .primary-content{
+    width: 100%;
+	padding-top:300px;
+}
+
+/*.secondary-content{
+    width: 100%;
+}
+.extra-content{
+	width:
+}
+*/
+.main-footer{
+    text-align: center;
+    padding-top: 5px;
+	padding-bottom:5px;
+}
+
+.main-banner{
+    background: #ebedee;
+    text-align: center;
+    padding: 35px 15px;
+	width:100%;
+}
+/*
+.main-logo,
+.main-nav{
+        position: relative;
+}
+.main-logo{
+    width: 150px;
+	top:20px;
+	left:20px;
+}
+.main-nav{
+    bottom: 32px;
+    left: 200px;
+}
+
+
+*/
+
+/* Media Query */
+@media (max-width: 768px){
+    .main-logo,
+    .main-nav,
+    .main-nav li,
+	.col,
+	.feat-img{
+        display: block;
+        width: initial;
+		height:initial;
+        margin: initial;
+		float:initial;
+    }
+	
+	.extra-content,
+.main-banner{
+	display:none;
+}
+
+.main-header{
+	width:100%;
+}
+.primary,
+.secondary{
+	width:100%;
+}
+.content-row{
+	margin-top:320px;
+}
+
+.main-logo{
+	margin-bottom:10px;
+}
+
+}
+/* Imagery */
+    .feat-img{
+        width: 50%;
+        float: left;
+        margin-right: 25px;
+    }
+	
+.main-header{
+    position: fixed;
+	width:100%;
+	top:0;
+	z-index:100;
+	height:auto;
+}
+
+
+
+@media (min-width: 769px){
+	
+	/* Header and Banner 
+    .main-logo,
+    .main-nav li{
+        float: left;
+    }
+    
+    .main-logo{
+        margin-right: 50px;
+    }
+    */
+	.main-logo{
+		width:150px;
+		float:left;
+		margin-top:0;
+	}
+	.main-nav {
+        text-align: right;
+		float:right !important;
+}
+
+
+   
+.main-wrapper,
+.content-row, 
+.col{	
+       height: auto;
+}
+
+    .main-nav li{
+		align-self: center;
+        height: 100%; 
+		margin-left:8px;
+		margin-right:8px;
+		display:inline-block;
+	    flex-grow:1;
+		-webkit-flex-grow:1; 
+		transition: .5s;
+}
+/*	.main-nav li:first-child{
+        margin-right: 50px;
+		-webkit-flex-grow:1.5;
+		flex-grow:1.5;
+}
+*/
+    .main-banner{
+        background: #dfe2e4;
+        text-align: center;
+        padding: 50px 15px;
+		display:block;
+    }
+	.main-footer{
+    text-align: center;
+    padding: 10px;
+}
+
+*{
+	box-sizing:border-box;
+}
+
+body{
+        padding-top: 120px;
+}
+	  /* Column Layout */
+	 .main-header,
+    .col{
+		padding:20px;
+    }
+ /*.content-row{
+        display: flex;
+}
+*/
+    
+.col{
+        width: 100%;
+       /* position: absolute;*/
+	   display:inline-block;
+	   vertical-align:top;
+		-webkit-flex: 1;
+	   flex:1; 
+}
+
+  /*  .primary-content{
+		-webkit-flex:2;
+		flex: 2;
+		-webkit-order:-1;
+    }
+	.extra-content{
+        -webkit-order: 1;
+}
+*/
+
+	.secondary-content{
+        right: 0;
+    }
+	.primary-content,
+	.secondary-content{
+		min-height:400px;
+	}
+    
+    .col:last-child{
+        float: right;
+    }
+    
+    
+
+	
+	/* Float Clearfix */
+	.grid-container,
+    .group:after{
+        content: "";
+		display:table;
+        clear: both;
+
+    }
+.grid-container{
+	width:100%;
+}
+	
+	
+	.icon::after{
+    content: "";
+    display: block;
+    width: 91px;
+    height: 95px;
+    background: url("../unnamed.png") no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+	}
+
+	
+	.main-nav li:hover:not(.main-logo){
+        flex-grow: 2;
+}
+
+.no-flexbox .main-nav li{
+        display: inline-block;
+        margin-top: 12px;
+        width: 150px;
+}
+    
+.no-flexbox .col{
+        float: left;
+        width: 33.3%; 
+}
+.no-flexbox a:hover::before{
+    left: 18px;
+}
+
+
+}
+
+
+
+
+/* Elemen Icon */
+.icon{
+    background-color: #38e18c;
+    margin-top: 34px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+h1{
+    margin: 0;
+}
+
+@media (min-width: 1px) and (max-width: 768px){
+    .main-nav li{
+        margin-top: 15px;
+    }
+    .main-nav li:first-child{
+        margin-top: 0;
+    }
+}
+
+/* Icon Fonts */
+@font-face{
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot');
+    src:url('../fonts/icomoon.eot?#iefix') ,
+        url('../fonts/icomoon.woff') ,
+        url('../fonts/icomoon.ttf') ,
+        url('../fonts/icomoon.svg#icomoon') ;
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.teks{
+	position:relative;
+	display:inline-block;
+}
+.teks::before{
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    color: #fff;
+    position: absolute;
+    top: 0px;
+	left:-350px;
+	transition: .5s;
+}
+
+a:hover .teks::before{
+    top: 0px;
+    left: -30px;
+}
+
+
